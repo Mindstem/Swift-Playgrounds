@@ -1,2 +1,1 @@
-# Swift-Playgrounds
-Swift Playgrounds
+# Swift Playgrounds
