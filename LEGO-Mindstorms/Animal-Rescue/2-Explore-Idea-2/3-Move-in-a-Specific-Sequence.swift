@@ -1,7 +1,7 @@
-func move() {
+func stepLeg() {
     ev3.motorOn(
-        forDegrees: 360,
-        on: .a, 
+        forDegrees: 90,
+        on: .a,
         withPower: 100)
 
     ev3.waitFor(seconds: 1)
@@ -9,9 +9,9 @@ func move() {
     ev3.motorOn(
         forDegrees: 360,
         on: .a, 
-        withPower: 100)
+        withPower: 50)
 }
 
 for i in 1 ... 3 {
-    move()
+    stepLeg()
 }
