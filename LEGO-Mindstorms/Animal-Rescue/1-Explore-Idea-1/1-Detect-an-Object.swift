@@ -1,7 +1,6 @@
 ev3.waitForUltrasonicCentimeters(
-    on: .a,
-    lessThanOrEqualTo: 1)
-
+    on: .four,
+    lessThanOrEqualTo: 30)
 
 ev3.brickLightOn(
     withColor: .red,
