@@ -1,3 +1,5 @@
+Watson.toneAnalyzer.apikey = "6GCpSGKMODqt95G95QsT27hvw704FxYcmvgaZHjdSUHd"
+
 let tinker = VirtualTJBot()
 let rebus = RebusTheBee()
 
