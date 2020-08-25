@@ -15,7 +15,7 @@ enum Emotion: String {
 
 let story: [String] = [
     "Hello, World",
-    "I am TJBot",
+    "I am Rebus",
     "How are you today?"
 ]
 
@@ -58,3 +58,5 @@ for sentence in story {
         case .unknown: break
     }
 }
+
+tinker.shine(color: .white)
