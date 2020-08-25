@@ -22,9 +22,3 @@ for msg in instructions {
         rebus.speak(t)
     }
 }
-
-// First, you have to turn red
-// Next, wave the arm twice
-// Make bright yellow light
-// Put your arm down
-// Emit blue light, then raise your arm
