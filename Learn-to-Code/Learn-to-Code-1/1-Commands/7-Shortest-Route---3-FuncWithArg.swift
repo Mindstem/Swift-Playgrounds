@@ -1,12 +1,12 @@
 // funcs
-func go(d: Int) {
-    for i in 1 ... d {
+func move(n: Int) {
+    for i in 1 ... n {
         moveForward()
     }
 }
 
 // main
-go(d: 3) 
+move(n: 3) 
 collectGem()
-go(d: 4)
+move(n: 4)
 toggleSwitch()
