@@ -1,4 +1,11 @@
-func doBoth() {
+// funcs
+func move(n: Int) {
+    for i in 1 ... n {
+        moveForward()
+    }
+}
+
+func collect2Gems() {
     for i in 1 ... 2 {
         moveForward()
         collectGem()
@@ -11,20 +18,16 @@ func turnAround() {
     }
 }
 
+// main
 for i in 1 ... 4 {
-    doBoth()
+    collect2Gems()
     turnAround()
     moveForward()
     turnRight()
     moveForward()
     collectGem()
     turnAround()
-    for i in 1 ... 2 {
-        moveForward()
-    }
+    move(n: 2)
     collectGem()
     moveForward()
 }
-
-
-// CODE REVIEW BY DADDY: GREAT WORK ON YOUR OWN!! :)
