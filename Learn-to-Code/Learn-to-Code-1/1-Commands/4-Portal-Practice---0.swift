@@ -1,17 +1,13 @@
-func go(dist: Int) {
-    for i in 1 ... dist {
-        moveForward()
-    }
-}
-
-go(dist: 3)
+moveForward()
+moveForward()
+moveForward()
 turnLeft()
-go(dist: 2)
+moveForward()
+moveForward()
 toggleSwitch()
-go(dist: 2)
+moveForward()
+moveForward()
 turnLeft()
-go(dist: 2)
+moveForward()
+moveForward()
 collectGem()
-
-
-// CODE REVIEW BY DADDY: GOOD!
