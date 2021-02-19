@@ -1,22 +1,18 @@
-func collect2Gems() {
-    for i in 1 ... 2 {
-        moveForward()
-        collectGem()
-    }
+func solveRow() {
+    collectGem()
+    moveForward()
+    collectGem()
+    moveForward()
+    collectGem()
 }
 
-collectGem()
-collect2Gems()
-turnRight()
-collect2Gems()
-turnRight()
-collect2Gems()
+// main
+solveRow()
 turnRight()
 moveForward()
-collectGem()
 turnRight()
+solveRow()
+turnLeft()
 moveForward()
-collectGem()
-
-
-// CODE REVIEW BY DADDY: OK! :|
+turnLeft()
+solveRow()
