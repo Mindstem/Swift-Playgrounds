@@ -1,1 +1,7 @@
-// CODE REVIEW BY DADDY: GOOD
+var direction = LEFT
+
+walk(direction)
+jump(direction)
+walk(direction)
+jump(direction)
+walk(direction)

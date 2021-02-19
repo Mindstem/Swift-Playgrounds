@@ -1,1 +1,5 @@
-// CODE REVIEW BY DADDY: GOOD
+walk(RIGHT)
+jump(RIGHT)
+walk(RIGHT)
+jump(RIGHT)
+jump(LEFT)
