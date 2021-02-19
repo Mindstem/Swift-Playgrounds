@@ -13,19 +13,19 @@ func moveAndCollectOrToggle() {
 
 // main
 for i in 1 ... 4 {
-    moveAndCollectOrToggle
+    moveAndCollectOrToggle()
 }
 turnLeft()
 for i in 1 ... 2 {
-    moveAndCollectOrToggle
+    moveAndCollectOrToggle()
 }
 turnLeft()
 for i in 1 ... 4 {
-    moveAndCollectOrToggle
+    moveAndCollectOrToggle()
 }
 turnRight()
-moveAndCollectOrToggle
+moveAndCollectOrToggle()
 turnRight()
 for i in 1 ... 4 {
-    moveAndCollectOrToggle
+    moveAndCollectOrToggle()
 }
