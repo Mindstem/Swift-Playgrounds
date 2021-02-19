@@ -1,11 +1,8 @@
 for i in 1 ... 2 {
     moveForward()
-    if isOnClosedSwitch {
-        toggleSwitch()
-    } else if isOnGem {
+    if isOnGem {
         collectGem()
+    } else if isOnClosedSwitch {
+        toggleSwitch()
     }
 }
-
-
-// CODE REVIEW BY DADDY: OK
