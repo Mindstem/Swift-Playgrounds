@@ -1,16 +1,12 @@
-func go2() {
-    for i in 1...2 {
+// funcs
+func move2() {
+    for i in 1 ... 2 {
         moveForward()
     }
 }
 
-// move
-go2()
-// turn
+// main
+move2()
 turnLeft()
-// move
-go2()
+move2()
 collectGem()
-
-
-// CODE REVIEW BY DADDY: GOOD!
