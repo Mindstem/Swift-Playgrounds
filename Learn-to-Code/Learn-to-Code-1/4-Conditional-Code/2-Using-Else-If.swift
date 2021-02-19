@@ -6,6 +6,3 @@ for i in 1 ... 2 {
         collectGem()
     }
 }
-
-
-// CODE REVIEW BY DADDY: OK

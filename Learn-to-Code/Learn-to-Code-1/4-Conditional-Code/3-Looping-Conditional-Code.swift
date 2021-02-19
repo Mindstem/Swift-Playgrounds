@@ -6,6 +6,3 @@ for i in 1 ... 12 {
         toggleSwitch()
     }
 }
-
-
-// CODE REVIEW BY DADDY: GOOD
