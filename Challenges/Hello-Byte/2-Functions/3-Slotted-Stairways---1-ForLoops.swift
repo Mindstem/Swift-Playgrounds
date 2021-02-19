@@ -20,9 +20,7 @@ func solveRow() {
     turnLeft()
 }
 
+// main
 for i in 1 ... 3 {
     solveRow()
 }
-
-
-// CODE REVIEW BY DADDY: VERY NICE :)
