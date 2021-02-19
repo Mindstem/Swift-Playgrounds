@@ -6,6 +6,3 @@ for color in colors {
     switchLightOn(color)
     forgeItems()
 }
-
-
-// CODE REVIEW: INTERESTING

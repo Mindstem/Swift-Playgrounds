@@ -6,6 +6,3 @@ for item in items {
     switchLightOn(.red)
     forgeItems()
 }
-
-
-// CODE REVIEW: OK

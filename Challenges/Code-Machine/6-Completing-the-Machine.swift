@@ -1,7 +1,8 @@
 let colors = [Light.red, Light.green, Light.blue]
 let allIngredients: [Item] = [
     .metal, .stone, .cloth, .dirt, .DNA, .spring, 
-    .wire, .gear, .egg, .tree, .gear, .seed, .crystal, .mushroom]
+    .wire, .gear, .egg, .tree, .gear, .seed, .crystal, .mushroom
+]
 let numberOfIngredients = allIngredients.count
 
 for color in colors {
@@ -14,6 +15,3 @@ for color in colors {
         }
     }
 }
-
-
-// CODE REVIEW: WOW IT TAKES A LONG TIME TO TRY ALL COMBINATIONS
