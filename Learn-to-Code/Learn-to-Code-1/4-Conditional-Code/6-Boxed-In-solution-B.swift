@@ -1,4 +1,5 @@
-﻿func checkTile() {
+﻿// funcs
+func checkTile() {
     if isOnGem {
         collectGem()
     } else if isOnClosedSwitch {
@@ -6,6 +7,7 @@
     }
 }
 
+// main
 moveForward()
 turnRight()
 
@@ -16,13 +18,3 @@ for i in 1 ... 4 {
     turnRight()
     moveForward()
 }
-
-
-// CODE REVIEW BY DADDY: NICE! :)
-
-    
-    
-    
-
-
-
