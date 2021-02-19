@@ -1,5 +1,5 @@
 func collectGemAndTurnAround() {
-	moveForward()
+    moveForward()
     moveForward()
     collectGem()
     turnLeft()

@@ -1,5 +1,6 @@
-func go(d: Int) {
-    for i in 1 ... d {
+// funcs
+func move(n: Int) {
+    for i in 1 ... n {
         moveForward()
     }
 }
@@ -13,14 +14,14 @@ func turnAround() {
 func solveRight() {
     collectGem()
     turnRight()
-    go(d: 3)
+    move(n: 3)
     turnLeft()
     moveForward()
     collectGem()
     turnAround()
     moveForward()
     turnRight()
-    go(d: 3)
+    move(n: 3)
     turnRight()
 }
 
@@ -34,6 +35,7 @@ func solveLeft() {
     turnLeft()
 }
 
+// main
 for i in 1 ... 5 {
     moveForward()
     if isOnGem {
@@ -42,6 +44,3 @@ for i in 1 ... 5 {
         solveLeft()
     }
 }
-
-
-// CODE REVIEW BY DADDY: FANTASTIC! <3

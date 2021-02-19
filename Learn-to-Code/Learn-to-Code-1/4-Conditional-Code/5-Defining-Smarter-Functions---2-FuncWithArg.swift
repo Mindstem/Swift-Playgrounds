@@ -13,6 +13,7 @@ func moveAndCollectOrToggleNSteps(n: Int) {
     }
 }
 
+// main
 moveAndCollectOrToggleNSteps(n: 4)
 turnLeft()
 moveAndCollectOrToggleNSteps(n: 2)
@@ -22,6 +23,3 @@ turnRight()
 moveAndCollectOrToggleNSteps(n: 1)
 turnRight()
 moveAndCollectOrToggleNSteps(n: 4)
-
-
-// CODE REVIEW BY DADDY: SO-SO
