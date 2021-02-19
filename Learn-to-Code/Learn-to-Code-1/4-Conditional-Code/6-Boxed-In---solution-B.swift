@@ -10,7 +10,6 @@ func checkTile() {
 // main
 moveForward()
 turnRight()
-
 for i in 1 ... 4 {
     checkTile()
     moveForward()
