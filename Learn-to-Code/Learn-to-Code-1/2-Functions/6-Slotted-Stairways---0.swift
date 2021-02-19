@@ -9,7 +9,7 @@ func collectGemAndTurnAround() {
 }
 
 func solveRow() {
-	collectGemTurnAround()
+    collectGemTurnAround()
     collectGemTurnAround()
     turnRight()
     moveForward()
