@@ -5,14 +5,14 @@ func move2() {
     }
 }
 
-func collect2Gems() {
+func moveAndCollect2Gems() {
     for i in 1 ... 2 {
         moveForward()
         collectGem()
     }
 }
 
-func toggle2Switches() {
+func moveAndToggle2Switches() {
     for i in 1 ... 2 {
         moveForward()
         toggleSwitch()
@@ -29,10 +29,10 @@ func turnAround() {
 // main
 for i in 1 ... 3 {
     turnLeft()
-    toggle2Switches()
+    moveAndToggle2Switches()
     turnAround()
     move2()
-    collect2Gems()
+    moveAndCollect2Gems()
     turnAround()
     move2()
     turnRight()
