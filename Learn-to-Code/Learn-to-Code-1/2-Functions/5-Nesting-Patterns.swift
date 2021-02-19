@@ -1,24 +1,17 @@
 func turnAround() {
-    for i in 1 ... 2 {
-        turnLeft()
-    }
+    turnLeft()
+    turnLeft()
 }
 
 func solveStair() {
     moveForward()
     collectGem()
     turnAround()
-    for i in 1 ... 2 {
-        moveForward()
-    }
-    collectGem()
-    turnAround()
     moveForward()
+    turnLeft()
 }
 
 solveStair()
-turnRight()
 solveStair()
-
-
-// CODE REVIEW BY DADDY: OK!
+solveStair()
+solveStair()
