@@ -1,6 +1,12 @@
 // funcs
-func move(n: Int) {
-    for i in 1 ... n {
+func move2() {
+    for i in 1 ... 2 {
+        moveForward()
+    }
+}
+
+func move7() {
+    for i in 1 ... 7 {
         moveForward()
     }
 }
@@ -13,11 +19,11 @@ func turnAround() {
 
 // main
 for i in 1 ... 3 {
-    move(n: 2)
+    move2()
     turnRight()
-    move(n: 7)
+    move7()
     toggleSwitch()
     turnAround()
-    move(n: 7)
+    move7()
     turnRight()
 }
