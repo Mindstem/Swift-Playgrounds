@@ -1,6 +1,7 @@
 func turnAround() {
-    turnLeft()
-    turnLeft()
+    for i in 1 ... 2 {
+        turnLeft()
+    }
 }
 
 func solveStair() {
@@ -11,7 +12,7 @@ func solveStair() {
     turnLeft()
 }
 
-solveStair()
-solveStair()
-solveStair()
-solveStair()
+// main
+for i in 1 ... 4 {
+    solveStair()
+}
