@@ -1,21 +1,19 @@
-func doBoth() {
+func moveCollectGemMoveToggleSwitch() {
     moveForward()
     collectGem()
     moveForward()
     toggleSwitch()
 }
 
-doBoth()
+// main
+moveCollectGemMoveToggleSwitch()
 moveForward()
 turnLeft()
-doBoth()
+moveCollectGemMoveToggleSwitch()
 moveForward()
 moveForward()
 turnLeft()
-doBoth()
+moveCollectGemMoveToggleSwitch()
 moveForward()
 turnLeft()
-doBoth()
-
-
-// CODE REVIEW BY DADDY: GOOD
+moveCollectGemMoveToggleSwitch()
