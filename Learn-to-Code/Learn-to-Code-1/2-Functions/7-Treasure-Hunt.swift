@@ -1,38 +1,32 @@
-func go2() {
-    for i in 1 ... 2 {
-        moveForward()
-    }
+// funcs
+func move2() {
+    moveForward()
+    moveForward()
 }
 
-func go2Toggle() {
-    go2()
+func move2AndToggle() {
+    moveForward()
+    moveForward()
     toggleSwitch()
 }
 
-func toggle2() {
-    for i in 1 ... 2 {
-        go2Toggle()
-    }
-}
-
 func turnAround() {
-    for i in 1 ... 2 {
-        turnLeft()
-    }
+    turnLeft()
+    turnLeft()
 }
 
-for i in 1 ... 2 {
-    go2Toggle()
-    turnAround()
-    go2()
-}
-turnRight()
-toggle2()
+// main
+move2AndToggle()
 turnAround()
-for i in 1 ... 2 {
-    go2()
-}
-toggle2()
-
-
-// CODE REVIEW BY DADDY: PHEW... WHAT A LOT OF FUNCS! :)
+move2()
+move2AndToggle()
+turnAround()
+move2()
+turnLeft()
+move2AndToggle()
+move2AndToggle()
+turnAround()
+move2()
+move2()
+move2AndToggle()
+move2AndToggle()
