@@ -1,10 +1,4 @@
-// step 1: keep moving
-for i in 1...3 {
-    moveForward()
-}
-
-// step 2: collect gem
+moveForward()
+moveForward()
+moveForward()
 collectGem()
-
-
-// CODE REVIEW BY DADDY: GOOD!
