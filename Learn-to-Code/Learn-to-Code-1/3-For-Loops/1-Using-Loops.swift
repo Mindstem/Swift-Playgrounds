@@ -1,10 +1,8 @@
 for i in 1 ... 5 {
-    for r in 1 ... 2 {
+    // to be sure, use a different iterator ("j") to the outer loop iterator "i"
+    for j in 1 ... 2 {
         moveForward()
     }
     collectGem()
     moveForward()
 }
-
-
-// CODE REVIEW BY DADDY: OK
