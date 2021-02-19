@@ -1,4 +1,5 @@
-func go2() {
+// funcs
+func move2() {
     for i in 1 ... 2 {
         moveForward()
     }
@@ -10,13 +11,11 @@ func turnAround() {
     }
 }
 
+// main
 for i in 1 ... 4 {
-    go2()
+    move2()
     toggleSwitch()
     turnAround()
-    go2()
+    move2()
     turnLeft()
 }
-
-
-// CODE REVIEW BY DADDY: NICE FUNCS! :)
