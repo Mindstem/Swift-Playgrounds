@@ -5,6 +5,3 @@ while !isBlocked {
     collectGem()
     turnLeft()
 }
-
-
-// CODE REVIEW BY DADDY: OK
