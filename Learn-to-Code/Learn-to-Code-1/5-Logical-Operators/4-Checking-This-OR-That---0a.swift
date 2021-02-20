@@ -7,6 +7,3 @@ for i in 1 ... 12 {
         collectGem()
     }
 }
-
-
-// CODE REVIEW BY DADDY: GREAT JOB REFACTORING THE IF-ELSE STATEMENT :)
