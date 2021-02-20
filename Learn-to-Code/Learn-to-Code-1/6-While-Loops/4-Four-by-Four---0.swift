@@ -7,6 +7,3 @@ for i in 1 ... 4 {
     }
     turnRight()
 }
-
-
-// CODE REVIEW BY DADDY: NICE NESTED LOOPS :)

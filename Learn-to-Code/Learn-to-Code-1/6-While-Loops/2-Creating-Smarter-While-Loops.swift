@@ -1,9 +1,6 @@
 while !isBlocked {
+    moveForward()
     if isOnClosedSwitch {
         toggleSwitch()
     }
-    moveForward()
 }
-
-
-// CODE REVIEW BY DADDY: GOOD :)

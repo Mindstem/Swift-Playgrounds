@@ -5,6 +5,3 @@ for i in 1 ... 4 {
     turnRight()
 }
 toggleSwitch()
-
-
-// CODE REVIEW BY DADDY: OK

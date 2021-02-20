@@ -9,6 +9,3 @@ for i in 1 ... 5 {
     } 
     turnRight()
 }
-
-
-// CODE REVIEW BY DADDY: GOOD
