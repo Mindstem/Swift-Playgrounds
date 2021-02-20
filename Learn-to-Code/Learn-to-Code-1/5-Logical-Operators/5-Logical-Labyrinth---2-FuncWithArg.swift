@@ -1,5 +1,5 @@
-func go(d: Int) {
-    for i in 1 ... d {
+func move(n: Int) {
+    for i in 1 ... n {
         moveForward()
     }
 }
@@ -8,12 +8,12 @@ func do3() {
     collectGem()
     toggleSwitch()
     turnRight()
-    go(d: 2)
+    move(n: 2)
     collectGem()
     for i in 1 ... 2 {
         turnLeft()
     }
-    go(d: 2)
+    move(n: 2)
     turnRight()
 }
 
@@ -28,6 +28,3 @@ for i in 1 ... 8 {
         collectGem()
     }
 }
-
-
-// CODE REVIEW BY DADDY: IMPRESSIVE WORK :o
