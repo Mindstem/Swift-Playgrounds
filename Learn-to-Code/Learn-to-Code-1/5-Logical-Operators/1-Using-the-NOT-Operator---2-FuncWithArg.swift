@@ -19,7 +19,3 @@ for i in 1 ... 4 {
         turnLeft()
     }
 }
-
-
-// CODE REVIEW BY DADDY: NICE WORK <3
-// - remember to see if you can refactor If-Else more nicely
