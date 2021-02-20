@@ -9,6 +9,3 @@ func turnAndCollectGem() {
 while !isBlocked {
     turnAndCollectGem()
 }
-
-
-// CODE REVIEW BY DADDY: GREAT WORK! :o
