@@ -1,6 +1,6 @@
 // funcs
-func move(n: Int) {
-    for i in 1 ... n {
+func move2() {
+    for i in 1 ... 2 {
         moveForward()
     }
 }
@@ -17,10 +17,10 @@ for i in 1 ... 7 {
     if isOnGem && isBlockedLeft {
         collectGem()
         turnRight()
-        move(n: 2)
+        move2()
         toggleSwitch()
         turnAround()
-        move(n: 2)
+        move2()
         turnRight()
     } else if isOnGem {
         collectGem()
