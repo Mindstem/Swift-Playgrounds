@@ -7,7 +7,3 @@ for i in 1 ... 13 {
         toggleSwitch()
     }
 }
-
-
-// CODE REVIEW BY DADDY: OK
-// - remember how we can refactor If-Else statements
