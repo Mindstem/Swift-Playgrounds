@@ -25,5 +25,3 @@ collectGem()
 turnRight()
 moveForward()
 collectGem()
-
-// CODE REVIEW BY DADDY: OUTSTANDING! :B

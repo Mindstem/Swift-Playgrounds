@@ -18,6 +18,3 @@ while !isOnClosedSwitch {
     navigateAroundWall()
 }
 toggleSwitch()
-
-
-// CODE REVIEW BY DADDY: NICE WORK :)

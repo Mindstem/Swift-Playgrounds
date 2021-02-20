@@ -16,6 +16,3 @@ while !isOnGem {
     }
 }
 collectGem()
-
-
-// CODE REVIEW BY DADDY: GREAT RE-USE OF FUNC! :)

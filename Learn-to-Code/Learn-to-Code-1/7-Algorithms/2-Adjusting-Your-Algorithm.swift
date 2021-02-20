@@ -19,6 +19,3 @@ while !isOnClosedSwitch {
     }
 }
 toggleSwitch()
-
-
-// CODE REVIEW BY DADDY: DADDY HELPED YOU A BIT, BUT STILL GOOD JOB! :P
