@@ -1,8 +1,8 @@
 for i in 1 ... 13 {
-    if isBlocked {
-        turnLeft()
+    if !isBlocked {
         moveForward()
     } else {
+        turnLeft()
         moveForward()
     }
 }
