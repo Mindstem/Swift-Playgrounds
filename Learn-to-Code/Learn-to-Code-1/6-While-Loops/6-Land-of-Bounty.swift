@@ -1,3 +1,4 @@
+// funcs
 func moveAndCheckTile() {
     moveForward()
     if isOnClosedSwitch {
@@ -13,6 +14,8 @@ func checkWholeRow() {
     }
 }
 
+// main
+
 // 1st row
 checkWholeRow()
 turnRight()
@@ -27,6 +30,3 @@ turnLeft()
 
 // 3rd row
 checkWholeRow()
-
-
-// CODE REVIEW BY DADDY: FANTASTIC REFACTORING! <3
