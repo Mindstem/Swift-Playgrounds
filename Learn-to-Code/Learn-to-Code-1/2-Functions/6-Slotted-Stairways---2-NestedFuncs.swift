@@ -11,7 +11,7 @@ func collectGemAndTurnAround() {
         }
     }
 
-	move(n: 2)
+    move(n: 2)
     collectGem()
     turnAround()
     move(n: 2)
