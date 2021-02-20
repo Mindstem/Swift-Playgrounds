@@ -5,7 +5,7 @@ func move2() {
     }
 }
 
-func collect2Gems() {
+func moveAndCollect2Gems() {
     for i in 1 ... 2 {
         moveForward()
         collectGem()
@@ -20,7 +20,7 @@ func turnAround() {
 
 // main
 for i in 1 ... 4 {
-    collect2Gems()
+    moveAndCollect2Gems()
     turnAround()
     moveForward()
     turnRight()
