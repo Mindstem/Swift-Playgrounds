@@ -1,7 +1,7 @@
 for i in 1 ... 4 {
-    for o in 1 ... 3 {
-        moveForward()
-    }
+    moveForward()
+    moveForward()
+    moveForward()
     if isOnClosedSwitch {
         toggleSwitch()
     }

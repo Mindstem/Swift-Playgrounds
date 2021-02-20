@@ -13,6 +13,3 @@ while !isOnGem {
     keepRight()
 }
 collectGem()
-
-
-// CODE REVIEW BY DADDY: AMAZINGLY GOOD REFACTORED FUNC! :O

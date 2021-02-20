@@ -3,6 +3,7 @@ for i in 1 ... 4 {
     if isOnGem {
         collectGem()
     } else {
+        // turn left then collect gem then go back
         turnLeft()
         moveForward()
         moveForward()

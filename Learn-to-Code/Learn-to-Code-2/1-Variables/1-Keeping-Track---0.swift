@@ -4,6 +4,3 @@ moveForward()
 moveForward()
 collectGem()
 gemCounter = 1
-
-
-// CODE REVIEW BY DADDY: OK
