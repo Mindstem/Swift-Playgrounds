@@ -1,26 +1,28 @@
-func go(d: Int) {
-    for i in 1 ... d {
+// funcs
+func move(n: Int) {
+    for i in 1 ... n {
         moveForward()
     }
 }
 
-func do3() {
-    collectGem()
-    toggleSwitch()
-    turnRight()
-    go(d: 2)
-    collectGem()
+func turnAround() {
     for i in 1 ... 2 {
         turnLeft()
     }
-    go(d: 2)
-    turnRight()
 }
 
+// main
 for i in 1 ... 8 {
     moveForward()
     if isOnGem && isOnClosedSwitch {
-        do3()
+        collectGem()
+        toggleSwitch()
+        turnRight()
+        move(n: 2)
+        collectGem()
+        turnAround()
+        move(n: 2)
+        turnRight()
     } else if isOnClosedSwitch {
         toggleSwitch()
         turnLeft()
@@ -28,6 +30,3 @@ for i in 1 ... 8 {
         collectGem()
     }
 }
-
-
-// CODE REVIEW BY DADDY: IMPRESSIVE WORK :o
