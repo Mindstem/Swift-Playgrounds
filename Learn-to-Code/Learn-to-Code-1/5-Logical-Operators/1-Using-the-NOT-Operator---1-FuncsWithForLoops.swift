@@ -1,6 +1,6 @@
 // funcs
-func move(n: Int) {
-    for i in 1 ... n {
+func move2() {
+    for i in 1 ... 2 {
         moveForward()
     }
 }
@@ -18,10 +18,10 @@ for i in 1 ... 4 {
         collectGem()
     } else {
         turnLeft()
-        move(n: 2)
+        move2()
         collectGem()
         turnAround()
-        move(n: 2)
+        move2()
         turnLeft()
     }
 }
