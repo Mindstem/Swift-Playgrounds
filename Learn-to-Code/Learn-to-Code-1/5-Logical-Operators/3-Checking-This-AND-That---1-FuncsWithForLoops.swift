@@ -15,6 +15,7 @@ func turnAround() {
 for i in 1 ... 7 {
     moveForward()
     if isOnGem && isBlockedLeft {
+        // collect gem then go right then toggle switch then go back
         collectGem()
         turnRight()
         move2()
