@@ -1,6 +1,7 @@
 for i in 1 ... 8 {
     moveForward()
     if isOnGem && isOnClosedSwitch {
+        // collect gem then toggle switch then go right then collect gem then go back
         collectGem()
         toggleSwitch()
         turnRight()

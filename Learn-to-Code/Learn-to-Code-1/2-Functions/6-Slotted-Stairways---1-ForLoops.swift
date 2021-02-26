@@ -12,7 +12,7 @@ func collectGemAndTurnAround() {
 }
 
 func solveRow() {
-	for i in 1 ... 2 {
+    for i in 1 ... 2 {
         collectGemTurnAround()
     }
     turnRight()
