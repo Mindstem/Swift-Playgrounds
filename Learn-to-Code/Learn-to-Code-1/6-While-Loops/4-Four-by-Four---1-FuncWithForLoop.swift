@@ -8,8 +8,6 @@ func move3() {
 // main
 for i in 1 ... 4 {
     move3()
-    if isOnClosedSwitch {
-        toggleSwitch()
-    }
+    toggleSwitch()
     turnRight()
 }
