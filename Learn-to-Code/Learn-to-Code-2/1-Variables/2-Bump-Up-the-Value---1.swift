@@ -5,6 +5,3 @@ for i in 1 ... 5 {
     collectGem()
     gemCounter += 1   
 }
-
-
-// CODE REVIEW BY DADDY: OK
