@@ -1,19 +1,19 @@
 var gemCounter = 0
 
-func checkTile() {
-    if isOnGem {
-        collectGem()
-        gemCounter += 1
-    }
-}
-
-for i in 1 ... 3 {
+// funcs
+func moveAndCollectUntilBlocked() {
     while !isBlocked {
         moveForward()
-        checkTile()
+        if isOnGem {
+            collectGem()
+            gemCounter += 1
+        }
     }
-    turnRight()
 }
 
-
-// CODE REVIEW BY DADDY: NICE LOOP! :)
+// main
+moveAndCollectUntilBlocked()
+turnRight()
+moveAndCollectUntilBlocked()
+turnRight()
+moveAndCollectUntilBlocked()
