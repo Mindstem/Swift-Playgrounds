@@ -1,32 +1,26 @@
 // funcs
-func moveAndCheckTile() {
-    moveForward()
-    if isOnClosedSwitch {
-        toggleSwitch()
-    } else if isOnGem {
+func checkTile() {
+    if isOnGem {
         collectGem()
+    } else if isOnClosedSwitch {
+        toggleSwitch()
     }
 }
 
-func checkWholeRow() {
+func moveAndCheckTileUntilBlocked() {
     while !isBlocked {
-        moveAndCheckTile()
+        moveForward()
+        checkTile()
     }
-}
+} 
 
 // main
-
-// 1st row
-checkWholeRow()
+moveAndCheckTileUntilBlocked()
 turnRight()
 moveForward()
 turnRight()
-
-// 2nd row
-checkWholeRow()
+moveAndCheckTileUntilBlocked()
 turnLeft()
 moveForward()
 turnLeft()
-
-// 3rd row
-checkWholeRow()
+moveAndCheckTileUntilBlocked()
