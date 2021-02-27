@@ -1,23 +1,21 @@
-var myGems = 0
-var mySwitches = 0
-while (myGems < 3) || (mySwitches < 4) {
+var gemCounter = 0
+var switchCounter = 0
+
+while (gemCounter < 3) || (switchCounter < 4) {
+    moveForward()
+    if isOnGem && (gemCounter < 3) {
+        collectGem()
+        gemCounter += 1
+    }
+    if isOnClosedSwitch && (switchCounter < 4) {
+        toggleSwitch()
+        switchCounter += 1
+    }
     if isBlocked {
-        if isBlockedRight {
-            turnLeft()
-        } else {
+        if isBlockedLeft {
             turnRight()
+        } else if isBlockedRight {
+            turnLeft()
         }
     }
-    moveForward()
-    if isOnGem && (myGems < 3) {
-        collectGem()
-        myGems += 1
-    }
-    if isOnClosedSwitch && (mySwitches < 4) {
-        toggleSwitch()
-        mySwitches += 1
-    }
 }
-
-
-// CODE REVIEW BY DADDY: GOOD! :)

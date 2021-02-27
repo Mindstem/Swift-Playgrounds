@@ -1,5 +1,3 @@
-var gemCounter = 0
-
 // funcs
 func turnAround() {
     for i in 1 ... 2 {
@@ -8,6 +6,8 @@ func turnAround() {
 }
 
 // main
+var gemCounter = 0
+
 while gemCounter < 7 {
     moveForward()
     if isOnGem {

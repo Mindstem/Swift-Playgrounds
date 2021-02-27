@@ -1,25 +1,25 @@
-var myGems = 0
+var gemCounter = 0
+
 while !isOnClosedSwitch {
-    if isBlocked {
-        turnRight()
-    }
     moveForward()
     if isOnGem {
         collectGem()
-        myGems += 1
-    }
-}
-var my_switches = 0
-while my_switches < myGems {
-    if isOnClosedSwitch {
-        toggleSwitch()
-        my_switches += 1
+        gemCounter += 1
     }
     if isBlocked {
         turnRight()
     }
-    moveForward()
 }
 
+var switchCounter = 0
 
-// CODE REVIEW BY DADDY: IMPRESSIVE! :o
+while switchCounter < gemCounter {
+    if isOnClosedSwitch {
+        toggleSwitch()
+        switchCounter += 1
+    }
+    moveForward()
+    if isBlocked {
+        turnRight()
+    }
+}
