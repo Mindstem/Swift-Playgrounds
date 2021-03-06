@@ -6,8 +6,7 @@ while (gemCounter < 3) || (switchCounter < 4) {
     if isOnGem && (gemCounter < 3) {
         collectGem()
         gemCounter += 1
-    }
-    if isOnClosedSwitch && (switchCounter < 4) {
+    } else if isOnClosedSwitch && (switchCounter < 4) {
         toggleSwitch()
         switchCounter += 1
     }
