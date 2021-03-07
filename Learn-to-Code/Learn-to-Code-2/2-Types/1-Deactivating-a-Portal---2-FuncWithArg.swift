@@ -1,5 +1,6 @@
-func go(d: Int) {
-    for i in 1 ... d {
+// funcs
+func move(n: Int) {
+    for i in 1 ... n {
         moveForward()
     }
 }
@@ -10,15 +11,18 @@ func turnAround() {
     }
 }
 
-greenPortal.isActive = false
-var myswitches = 0
-for i in 1 ... 3 {
-    go(d: 3)
-    turnRight()
-    go(d: 3)
+func goLeftAndToggle() {
+    move(n: 3)
+    turnLeft()
+    move(n: 3)
     toggleSwitch()
-    turnAround()
 }
 
+// main
+greenPortal.isActive = false
 
-// CODE REVIEW BY DADDY: OK :|
+goLeftAndToggle()
+turnAround()
+goLeftAndToggle()
+turnAround()
+goLeftAndToggle()
