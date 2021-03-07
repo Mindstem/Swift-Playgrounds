@@ -1,12 +1,14 @@
 let expert = Expert()
 let character = Character()
 
-func go(who: Character, d: Int) {
-    for i in 1 ... d {
+// funcs
+func move(who: Character, n: Int) {
+    for i in 1 ... n {
         who.moveForward()
     }
 }
 
+// main
 expert.turnLeft()
 go(who: expert, d: 3)
 expert.turnRight()
