@@ -1,34 +1,25 @@
 let expert = Expert()
 
-func go(who: Character, d: Int) {
-    for i in 1 ... d {
-        who.moveForward()
-    }
+// funcs
+func move(who: Character, n: Int) {
+	for i in 1 ... n {
+		who.moveForward()
+	}
 }
 
 func turnAround(who: Character) {
-    for i in 1 ... 2 {
-        who.turnLeft()
-    }
+	for i in 1 ... 2 {
+		who.turnLeft()
+	}
 }
 
-while !expert.isBlocked {
-    expert.moveForward()
-}
+// main
+move(who: expert, n: 3)
 expert.turnLockUp()
-turnAround(who: expert)
-go(who: expert, d: 3)
-expert.turnRight()
-go(who: expert, d: 3)
-expert.collectGem()
-turnAround(who: expert)
-go(who: expert, d: 6)
-expert.collectGem()
-turnAround(who: expert)
-go(who: expert, d: 3)
-expert.turnLeft()
-go(who: expert, d: 3)
-expert.collectGem()
-
-
-// CODE REVIEW BY DADDY: GREAT! :)
+for i in 1 ... 3 {
+    turnAround(who: expert)
+    move(who: expert, n: 3)
+    expert.turnLeft()
+    move(who: expert, n: 3)
+    expert.collectGem()
+}
