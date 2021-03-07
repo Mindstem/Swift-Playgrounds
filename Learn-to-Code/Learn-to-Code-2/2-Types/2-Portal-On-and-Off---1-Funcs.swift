@@ -1,34 +1,37 @@
-func moveAndCollcetUntilIsBlocked() {
-    while !isBlocked {
-        moveForward()
-        if isOnGem {
-            collectGem()
-        }
-    }
-}
-
-func go(d: Int) {
-    for i in 1 ... d {
-        moveForward()
-    }
-}
-
+// funcs
 func turnAround() {
     for i in 1 ... 2 {
         turnLeft()
     }
 }
 
-purplePortal.isActive=false
-moveAndCollcetUntilIsBlocked()
+func checkTile() {
+    if isOnGem {
+        collectGem()
+    } else if isOnClosedSwitch {
+        toggleSwitch()
+    }
+}
+
+// main
+purplePortal.isActive = false
+while !isBlocked {
+    moveForward()
+    checkTile()
+}
+
 turnAround()
-go(d: 3)
-purplePortal.isActive=true
-go(d: 3)
+
+purplePortal.isActive = true
+while !isBlocked {
+    moveForward()
+}
 toggleSwitch()
+
 turnAround()
-purplePortal.isActive=false
-moveAndCollcetUntilIsBlocked()
 
-
-// CODE REVIEW BY DADDY: DECENT :)
+purplePortal.isActive = false
+while !isBlocked {
+    moveForward()
+    checkTile()
+}
