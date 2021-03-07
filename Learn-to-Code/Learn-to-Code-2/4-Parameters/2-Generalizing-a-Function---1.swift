@@ -19,28 +19,25 @@ func turnAround(who: Character) {
     }
 }
 
+// main
 turnLock(up: true, numberOfTimes: 3)
 turnAround(who: expert)
 turnLock(up: true, numberOfTimes: 3)
 character.move(distance: 3)
 character.collectGem()
-turnAround(who:character)
+turnAround(who: character)
 turnAround(who: expert)
 character.moveForward()
-turnLock(up: false, numberOfTimes:2)
-turnAround(who:character)
-character.turnRight()
+turnLock(up: false, numberOfTimes: 2)
+character.turnLeft()
 character.moveForward()
 character.turnLeft()
 character.moveForward()
 character.collectGem()
+turnAround(who: character)
 turnAround(who: expert)
 turnLock(up: false, numberOfTimes: 2)
-turnAround(who:character)
 character.move(distance: 2)
 expert.turnLockDown()
 character.moveForward()
 character.collectGem()
-
-
-// CODE REVIEW BY DADDY: AWESOME! :0
