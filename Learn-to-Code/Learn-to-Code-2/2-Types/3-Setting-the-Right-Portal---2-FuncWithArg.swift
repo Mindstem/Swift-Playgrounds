@@ -1,5 +1,6 @@
-func go(d: Int) {
-    for i in 1 ... d {
+// funcs
+func move(n: Int) {
+    for i in 1 ... n {
         moveForward()
     }
 }
@@ -10,29 +11,23 @@ func turnAround() {
     }
 }
 
-bluePortal.isActive=false
-pinkPortal.isActive=false
-while !isBlocked {
-    moveForward()
-    if isOnGem {
-        collectGem()
-    }
-}
-pinkPortal.isActive=true
+// main
+bluePortal.isActive = false
+pinkPortal.isActive = false
+move(n: 3)
+collectGem()
 turnAround()
+pinkPortal.isActive = true
 moveForward()
 turnAround()
 moveForward()
 collectGem()
 turnAround()
 moveForward()
-bluePortal.isActive=true
-go(d: 2)
+bluePortal.isActive = true
+move(n: 2)
 collectGem()
 turnAround()
-bluePortal.isActive=false
-go(d: 2)
+bluePortal.isActive = false
+move(n: 2)
 collectGem()
-
-
-// CODE REVIEW BY DADDY: NICE WORK :)
