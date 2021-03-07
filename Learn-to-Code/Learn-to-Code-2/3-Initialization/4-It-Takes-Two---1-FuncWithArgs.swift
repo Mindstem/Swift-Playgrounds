@@ -10,24 +10,21 @@ func move(who: Character, n: Int) {
 
 // main
 expert.turnLeft()
-go(who: expert, d: 3)
+move(who: expert, n: 3)
 expert.turnRight()
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.turnLeft()
 expert.turnLockDown()
 expert.turnLockDown()
-go(who: character, d: 2)
+move(who: character, n: 2)
 character.collectGem()
 expert.turnRight()
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.turnRight()
-go(who: expert, d: 6)
+move(who: expert, n: 6)
 expert.turnRight()
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.turnLeft()
 expert.turnLockUp()
-go(who: character, d: 2)
+move(who: character, n: 2)
 character.toggleSwitch()
-
-
-// CODE REVIEW BY DADDY: PHENOMENAL WORK WITH FUNC WITH 2 PARAMETERS! <3
