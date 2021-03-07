@@ -1,7 +1,8 @@
 let expert = Expert()
 
-func go(who: Character, d: Int) {
-    for i in 1 ... d {
+// funcs
+func move(who: Character, n: Int) {
+    for i in 1 ... n {
         who.moveForward()
     }
 }
@@ -12,44 +13,42 @@ func turnAround(who: Character) {
     }
 }
 
-// 1 gem
+// main
+// 1st gem
 turnAround(who: expert)
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.collectGem()
-
-// 2 gem
 expert.turnLockDown()
+
+// 2nd gem
 turnAround(who: expert)
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.turnLeft()
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.collectGem()
 
-// 3 gem
+// 3rd gem
 turnAround(who: expert)
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.turnLeft()
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.collectGem()
 
-// 4 gem
+// 4th gem
 turnAround(who: expert)
-go(who: expert, d: 2)
+move(who: expert, n: 2)
 expert.turnLeft()
-go(who: expert, d: 5)
+move(who: expert, n: 5)
 expert.collectGem()
 
-// 5 gem
+// 5th gem
 turnAround(who: expert)
-go(who: expert, d: 2)
-expert.turnRight()
-go(who: expert, d: 2)
+move(who: expert, n: 2)
+expert.turnLeft()
+move(who: expert, n: 2)
 expert.collectGem()
 
-// 6 gem
+// 6th gem
 turnAround(who: expert)
-go(who: expert, d: 4)
+move(who: expert, n: 4)
 expert.collectGem()
-
-
-// CODE REVIEW BY DADDY: NICE WORK! REMEMBER TO BREAK A LONG PROGRAM INTO "PARAGRAPHS" WITH COMMENTS SO THAT YOU CAN TRACK WHAT IS GOING ON :|
