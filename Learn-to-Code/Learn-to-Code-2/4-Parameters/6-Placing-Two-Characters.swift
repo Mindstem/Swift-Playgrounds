@@ -1,27 +1,26 @@
-let seeker = Expert()
-let boom = Character()
+let expert = Expert()
+world.place(expert, facing: north, atColumn: 3, row: 0)
 
-world.place(boom, facing: north, atColumn: 0, row: 0)
-world.place(seeker, facing: north, atColumn: 3, row: 0)
+let character = Character()
+world.place(character, facing: north, atColumn: 0, row: 0)
 
+// funcs
 func collectAndJump() {
-    boom.collectGem()
+    character.collectGem()
     for i in 1 ... 2 {
-        boom.jump()
+        character.jump()
     }
 }
 
-seeker.toggleSwitch()
+// main
+expert.toggleSwitch()
 for i in 1 ... 2 {
     collectAndJump() 
 }
-boom.turnRight()
+character.turnRight()
 for i in 1 ... 2 {
     collectAndJump() 
 }
-boom.turnLeft()
+character.turnLeft()
 collectAndJump()
-boom.collectGem()
-
-
-// CODE REVIEW BY DADDY: OUTSTANDING WORK ON YOUR OWN! :O
+character.collectGem()
