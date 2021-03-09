@@ -1,30 +1,25 @@
-let ron = Expert()
-world.place(ron, facing: south, atColumn: 1, row: 5)
-ron.collectGem()
-ron.turnLockDown()
-ron.turnLeft()
-ron.move(distance: 3)
-ron.collectGem()
-ron.moveForward()
-ron.collectGem()
-ron.turnLockUp()
-ron.turnRight()
-ron.moveForward()
-ron.collectGem()
-ron.move(distance: 2)
-ron.collectGem()
-ron.moveForward()
-ron.collectGem()
-ron.turnLeft()
-ron.turnLeft()
-ron.move(distance: 4)
-ron.turnLeft()
-ron.move(distance: 4)
-ron.turnRight()
-for i in 1 ... 3 {
-    ron.moveForward()
-    ron.collectGem()
+let expert = Expert()
+world.place(expert, facing: south, atColumn: 1, row: 8)
+
+while !expert.isBlocked {
+    if expert.isOnGem {
+        expert.collectGem()
+    }
+    expert.moveForward()
 }
-
-
-// CODE REVIEW BY DADDY: WELL DONE! :)
+expert.turnLockDown()
+expert.turnLeft()
+while !expert.isBlocked {
+    if expert.isOnGem {
+        expert.collectGem()
+    }
+    expert.moveForward()
+}
+expert.turnLockUp()
+expert.turnRight()
+while !expert.isBlocked {
+    if expert.isOnGem {
+        expert.collectGem()
+    }
+    expert.moveForward()
+}
