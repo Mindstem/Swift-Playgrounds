@@ -2,15 +2,15 @@ let expert = Expert()
 
 // funcs
 func move3() {
-	for i in 1 ... 3 {
-		expert.moveForward()
-	}
+    for i in 1 ... 3 {
+        expert.moveForward()
+    }
 }
 
 func turnAround() {
-	for i in 1 ... 2 {
-		expert.turnLeft()
-	}
+    for i in 1 ... 2 {
+        expert.turnLeft()
+    }
 }
 
 // main
