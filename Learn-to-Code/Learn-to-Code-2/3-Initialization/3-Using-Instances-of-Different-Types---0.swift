@@ -13,6 +13,3 @@ expert.turnLockDown()
 expert.turnLockDown()
 character.moveForward()
 character.collectGem()
-
-
-// CODE REVIEW BY DADDY: GOOD :)

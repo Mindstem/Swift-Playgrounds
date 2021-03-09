@@ -6,6 +6,7 @@ func move(distance: Int) {
     }
 }
 
+// main
 move(distance: 6)
 expert.turnRight()
 move(distance: 2)
@@ -22,6 +23,3 @@ move(distance: 3)
 expert.turnRight()
 move(distance: 4)
 expert.collectGem()
-
-
-// CODE REVIEW BY DADDY: OK :)
