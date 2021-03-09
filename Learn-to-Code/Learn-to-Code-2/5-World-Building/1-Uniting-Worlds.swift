@@ -1,18 +1,14 @@
-let sony = Character()
-let block1 = Block()
-world.place(Block(), atColumn: 3, row: 3)
+let block = Block()
+world.place(block, atColumn: 3, row: 3)
 
 while !isOnClosedSwitch {
     moveForward()
     if isBlocked {
-        turnLeft()
-        if isBlocked {
-            turnRight()
+        if isBlockedRight {
+            turnLeft()
+        } else if isBlockedLeft {
             turnRight()
         }
     }
 }
 toggleSwitch()
-
-
-// CODE REVIEW BY DADDY: INCREDIBLE WORK ON YOUR OWN! :O
