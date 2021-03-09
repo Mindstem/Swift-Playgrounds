@@ -5,7 +5,7 @@ let character = Character()
 world.place(character, facing: north, atColumn: 0, row: 0)
 
 // funcs
-func collectAndJump() {
+func collectAndJumpTwice() {
     character.collectGem()
     for i in 1 ... 2 {
         character.jump()
@@ -15,12 +15,12 @@ func collectAndJump() {
 // main
 expert.toggleSwitch()
 for i in 1 ... 2 {
-    collectAndJump() 
+    collectAndJumpTwice() 
 }
 character.turnRight()
 for i in 1 ... 2 {
-    collectAndJump() 
+    collectAndJumpTwice() 
 }
 character.turnLeft()
-collectAndJump()
+collectAndJumpTwice()
 character.collectGem()
