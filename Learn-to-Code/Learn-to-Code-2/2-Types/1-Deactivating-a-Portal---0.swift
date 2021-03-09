@@ -11,6 +11,7 @@ toggleSwitch()
 
 turnLeft() 
 turnLeft()
+
 moveForward()
 moveForward()
 moveForward()
@@ -22,6 +23,7 @@ toggleSwitch()
 
 turnLeft() 
 turnLeft()
+
 moveForward()
 moveForward()
 moveForward()
